@@ -188,7 +188,6 @@ def sum_numbers(number_list):
         0
 
     """
-    #sum_list = []
     sums = 0
     for number in number_list:
         sums = sums + number
@@ -214,9 +213,13 @@ def mult_numbers(number_list):
         1
 
     """
+    mult = 1
+    for number in number_list:
+        mult = mult * number
 
 
-    return None
+
+    return mult
 
 
 def join_strings(word_list):
