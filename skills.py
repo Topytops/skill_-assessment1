@@ -238,7 +238,7 @@ def join_strings(word_list):
 
     """
     joined_string = ''
-    if len(word_list) == 0
+    if len(word_list) == 0:
         return ''
     else:
         for word in word_list:
