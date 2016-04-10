@@ -72,8 +72,12 @@ def long_words(word_list):
         []
 
     """
+    longer_words = []
+    for word in word_list:
+        if len(word) > 4:
+            longer_words.append(word)
 
-    return ['the wrong thing']
+    return longer_words
 
 
 def smallest_int(number_list):
