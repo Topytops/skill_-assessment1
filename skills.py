@@ -58,8 +58,10 @@ def print_indexes(my_list):
         2 Volvo
 
     """
+    for word in range(len(my_list)):
+        print "{} {}" .format(word, my_list[word])
 
-    print "Nothing at all"
+    
 
 
 def long_words(word_list):
@@ -256,8 +258,12 @@ def average(number_list):
     There is no defined answer if the list given is empty. It's fine if
     this raises an error when given an empty list.
     """
+    sums = 0
+    for number in number_list:
+        sums += number
+    average = sums / float(len(number_list))    
 
-    return 0
+    return average
 
 
 def join_strings_with_comma(list_of_words):
