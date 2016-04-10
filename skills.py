@@ -99,8 +99,11 @@ def smallest_int(number_list):
         True
 
     """
+    for number in number_list:
+        number_list.sort()
 
-    return 100
+
+        return number_list[0]
 
 
 def largest_int(number_list):
