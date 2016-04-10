@@ -142,6 +142,18 @@ def halvesies(number_list):
         [0.5, 2.5]
 
     """
+    halvesies_list = []
+    for number in number_list:
+        if number % 2 < 0:
+            numbers = float((number / 2) - .5)
+            halvesies_list.append(number)
+        elif number % 2 != 0:
+            numbers = float((number / 2) + .5)
+            halvesies_list.append(numbers)
+        else:
+            numbers = float(number / 2)
+            halvesies_list.append(numbers)
+    return halvesies_list        
 
     return []
 
