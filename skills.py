@@ -280,7 +280,17 @@ def join_strings_with_comma(list_of_words):
 
     """
 
-    return ""
+    joined_word = ''
+    index = 0
+    x = len(list_of_words)
+    for word in list_of_words:
+        if index >= (x - 1):
+            joined_word += word
+        else:
+            index += 1
+            joined_word += word + ', '  
+    return joined_word[-1]          
+
 
 
 ##############################################################################
