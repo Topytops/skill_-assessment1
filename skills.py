@@ -123,8 +123,11 @@ def largest_int(number_list):
         True
 
     """
+    for number in number_list:
+        number_list.sort()
+        return number_list[-1]
 
-    return 0
+    
 
 
 def halvesies(number_list):
