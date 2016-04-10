@@ -155,7 +155,6 @@ def halvesies(number_list):
             halvesies_list.append(numbers)
     return halvesies_list        
 
-    return []
 
 
 def word_lengths(word_list):
@@ -165,8 +164,13 @@ def word_lengths(word_list):
         [5, 3, 5, 4]
 
     """
+    word_lengths_list = []
+    for word in word_list:
+        word_length = len(word)
+        word_lengths_list.append(word_length)
 
-    return []
+
+    return word_lengths_list
 
 
 def sum_numbers(number_list):
