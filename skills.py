@@ -279,17 +279,20 @@ def join_strings_with_comma(list_of_words):
         'Pretzel'
 
     """
-
+    joined_list = []
     joined_word = ''
     index = 0
     x = len(list_of_words)
     for word in list_of_words:
         if index >= (x - 1):
             joined_word += word
+            joined_list.append(joined_word)
         else:
             index += 1
-            joined_word += word + ', '  
-    return joined_word[-1]          
+            joined_word += word + ', ' 
+            joined_list.append(joined_word)
+
+    return joined_list[-1]          
 
 
 
