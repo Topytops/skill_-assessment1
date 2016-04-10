@@ -188,8 +188,12 @@ def sum_numbers(number_list):
         0
 
     """
+    sum_list = []
+    sums = 0
+    for number in number_list:
+        sums = sums + number
 
-    return None
+    return sums
 
 
 def mult_numbers(number_list):
